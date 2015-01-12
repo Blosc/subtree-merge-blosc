@@ -1,7 +1,6 @@
 #!/bin/sh
 
-# Script to automatically subtree merge a specifc version of blosc to
-# python-blosc.
+# Script to automatically subtree merge a specifc version of blosc.
 
 # TODO
 # ----
