@@ -1,11 +1,60 @@
-======================
 subtree-merge-blosc.sh
 ======================
 
+Description
+-----------
 
+This is the ``subtree-merge-blosc.sh`` script.
+
+History
+-------
+
+This script was originally written by Valentin Haenel <valentin@haenel.co> for
+the `python-blosc <http://github.com/blosc/python-blosc>`_ project in Apr 2013.
+
+After that, it was also included directly in other repositories and served to
+synchronize the Blosc sources, most notably for the PyTables and bcolz
+projects. While the practice of copying and pasting code across repositories is
+in general frowned upon, since it becomes very difficult to propagate bugfixes,
+in this case there isn't really an alternative and since the scope of the
+script is so minimal this practice is feasible.  Luckily, in this case, the
+script didn't have to change during its lifecycle so all versions were (almost
+exactly) identical.
+
+In January 2015 it became apparent that the script may fail under certain
+circumstances, e.g. when not invoked from the root directory of a Git
+repository. Also when trying to merge Blosc v1.5.2 into the python-blosc
+project, the script failed due to an unknown cause, potentially attributable to
+a bug in the implementation or the algorithmic specification of Git's *subtree*
+merge strategy. As such, it became apparent that it may be necessary to enhance
+the script. So, the script was extracted from its original home to ease
+integration and dissemination of improvements by providing a single,
+authoritative source which can hence forth be included in other repositories.
+
+Reasoning
+---------
+
+TODO: Write
+
+Used in ...
+===========
+
+* python-blosc
+* PyTables
+* bcolz
+
+If your repository includes this script, please send a pull-request to include
+it in the above list so that we can notify you of any new releases.
+
+Checking that it worked
+=======================
+
+TODO:
 
 Merging Blosc sources from upstream
 ===================================
+
+TODO: overhaul
 
 We use the `subtree merge technique
 <http://git-scm.com/book/en/Git-Tools-Subtree-Merging>`_ to maintain the
