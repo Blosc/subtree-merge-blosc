@@ -16,6 +16,8 @@
 
 # configure remote
 remote="git://github.com/Blosc/c-blosc.git"
+# regular expression for tag
+tag_regex="^v[0-9]*\.[0-9]*\.[0-9]*$"
 
 # check argument
 if [ -z "$1" ] ; then
@@ -25,6 +27,12 @@ fi
 
 # extract the blosc tag the user has requested
 blosc_tag="$1"
+
+# check that the tag is sane
+if ! echo $blosc_tag | grep -q $tag_regex ; then
+    echo "Tag: '$1' doesn't match regex '$tag_regex'"
+    exit 1
+fi
 blosc_tag_long="refs/tags/$1"
 
 # check that it exists on the remote side
