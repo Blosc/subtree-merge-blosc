@@ -6,7 +6,6 @@
 # ----
 #
 # * Should probably check working tree and index are clean.
-# * Check if we are in the top-level directory
 # * Version number
 # * Lisence
 # * Author
@@ -26,6 +25,11 @@ fatal () {
 # check argument
 if [ -z "$1" ] ; then
     fatal "usage: subtree-merge-blosc.sh <blosc-tag>"
+fi
+
+# check we are in the repository root dir
+if [ "$( git rev-parse --show-toplevel)" != "$( pwd )" ] ; then
+    fatal "not currently in the repositories top-level"
 fi
 
 # check c-blosc subdirectory exists
