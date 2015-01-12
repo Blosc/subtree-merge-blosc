@@ -6,6 +6,13 @@
 # ----
 #
 # * Should probably check working tree and index are clean.
+# * Check if we are in the top-level directory
+# * Check if a c-blosc subdirectory exists
+# * Version number
+# * Lisence
+# * Author
+# * Switch for alternate -Xsubtree -Xtheirs strategy
+# * Hyperlink to script repository
 
 # configure remote
 remote="git://github.com/Blosc/c-blosc.git"
