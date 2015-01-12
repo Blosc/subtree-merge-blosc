@@ -7,7 +7,6 @@
 #
 # * Should probably check working tree and index are clean.
 # * Check if we are in the top-level directory
-# * Check if a c-blosc subdirectory exists
 # * Version number
 # * Lisence
 # * Author
@@ -22,6 +21,12 @@ tag_regex="^v[0-9]*\.[0-9]*\.[0-9]*$"
 # check argument
 if [ -z "$1" ] ; then
     echo "usage: subtree-merge-blosc.sh <blosc-tag>"
+    exit 1
+fi
+
+# check c-blosc subdirectory exists
+if ! [ -d "c-blosc" ] ; then
+    echo "'c-blosc' subdirectory doesn't exist"
     exit 1
 fi
 
