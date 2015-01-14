@@ -1,16 +1,21 @@
 #!/bin/sh
 
-# Script to automatically subtree merge a specifc version of blosc.
-
+# Script to automatically subtree merge a specifc version of blosc. Please do
+# not modify this script, but submit all changes to:
+#
+# http://github.com/Blosc/subtree-merge-blosc
+#
+# Author: Valentin Haenel <valentin@haenel.co>
+#
+# License: WTFPL (do what the fuck you want public lisence)
+#
 # TODO
 # ----
 #
 # * Should probably check working tree and index are clean.
 # * Version number
-# * Lisence
-# * Author
 # * Switch for alternate -Xsubtree -Xtheirs strategy
-# * Hyperlink to script repository
+
 
 # configure remote
 remote="git://github.com/Blosc/c-blosc.git"
