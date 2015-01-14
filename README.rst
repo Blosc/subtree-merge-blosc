@@ -49,7 +49,7 @@ The question arises, as to why it was chosen to include the Blosc sources
 instead of using Git's submodules. Essentially, at the time of writing this
 script, git submodules were fairly difficult to use and in addition the Blosc
 sources themselves were fairly small. Additionally, for python-blosc, it was
-important to include the blosc sources and a way to build them into the C
+important to include the Blosc sources and a way to build them into the C
 extension via the ``setup.py`` file to ease installation for users. Shipping
 them with python-blosc via PyPi means a user could easily install a fully
 functional python-blosc by simply doing ``pip install blosc`` and there is no
