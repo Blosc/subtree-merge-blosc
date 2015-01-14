@@ -124,3 +124,12 @@ is shown below:
     [subtree-merge-blosc.sh b7a7378] subtree merge blosc v1.2.3
      16 files changed, 60 insertions(+), 43 deletions(-)
 
+Author
+------
+
+Valentin Haenel <valentin@haenel.co>
+
+License
+-------
+
+WTFPL (Do what the fuck you want to public license)
