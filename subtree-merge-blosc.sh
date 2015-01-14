@@ -5,7 +5,8 @@
 # For more information, see:
 # http://github.com/Blosc/subtree-merge-blosc
 #
-# Please do not change this file and submit any changes to the above URL.
+# Please do not change this file and submit any changes to the above URL
+# instead.
 #
 # Author: Valentin Haenel <valentin@haenel.co>
 #
