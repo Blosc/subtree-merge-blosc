@@ -16,7 +16,6 @@
 #
 # * Should probably check working tree and index are clean.
 # * Version number
-# * Switch for alternate -Xsubtree -Xtheirs strategy
 
 
 # configure remote
@@ -65,6 +64,8 @@ fi
 git fetch $remote $blosc_tag_long || exit 1
 # subtree merge it
 git merge --squash -s subtree FETCH_HEAD || exit 1
+# if this doesn't work you could use:
+# git merge -Xsubtree -Xtheirs FETCH_HEAD || exit 1
 if git diff --staged --quiet ; then
     fatal "nothing new to be committed"
 else
