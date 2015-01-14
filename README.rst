@@ -4,7 +4,8 @@ subtree-merge-blosc.sh
 Description
 -----------
 
-This is the ``subtree-merge-blosc.sh`` script.
+This is the ``subtree-merge-blosc.sh`` script. It is a Script to automatically
+subtree merge a specific version of Blosc.
 
 History
 -------
