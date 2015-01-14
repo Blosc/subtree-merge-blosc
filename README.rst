@@ -23,7 +23,7 @@ exactly) identical.
 
 In January 2015 it became apparent that the script may fail under certain
 circumstances, e.g. when not invoked from the root directory of a Git
-repository. Also when trying to merge Blosc v1.5.2 into the python-blosc
+repository. Also when trying to merge Blosc ``v1.5.2`` into the python-blosc
 project, the script failed due to an unknown cause, potentially attributable to
 a bug in the implementation or the algorithmic specification of Git's *subtree*
 merge strategy. As such, it became apparent that it may be necessary to enhance
