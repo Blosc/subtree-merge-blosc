@@ -34,7 +34,30 @@ authoritative source which can hence forth be included in other repositories.
 Reasoning
 ---------
 
-TODO: Write
+The question arises, as to why it was chosen to include the Blosc sources
+instead of using Git's submodules. Essentially, at the time of writing this
+script, git submodules were fairly difficult to use and in addition the Blosc
+sources themselves were fairly small. Additionally, for python-blosc, it was
+important to include the blosc sources and a way to build them into the C
+extension via the ``setup.py`` file to ease installation for users. Shipping
+them with python-blosc via PyPi means a user could easily install a fully
+functional python-blosc by simply doing ``pip install blosc`` and there is no
+need to build Blosc separately.
+
+Therefore, directly including the sources was and still is  a good trade-off to
+make. Now (January 2015) Blosc has advanced and itself includes the sources for
+the codecs that it can handle and including sources has become somewhat of a
+tradition. Thus we continue, and include Blosc and all of the codecs it
+supports directly in the sources of python-blosc. This technique has been
+painless of the years and proved itself useful so that it was adopted in other
+projects that use Blosc too.
+
+A note to packagers: we do realize, that for packaging it doesn't make sense to
+compile Blosc into a C extension for multiple projects thereby duplicating the
+amount of symbols and being wasteful of space on a target system. Since we are
+aware of this need it is (and always should be) possible to build Blosc as a
+shared library and dynamically link any projects that use it. See the
+documentation of the corresponding projects for more information.
 
 Used in ...
 ===========
