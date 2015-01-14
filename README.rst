@@ -31,6 +31,16 @@ the script. So, the script was extracted from its original home to ease
 integration and dissemination of improvements by providing a single,
 authoritative source which can hence forth be included in other repositories.
 
+Used in ...
+===========
+
+* `python-blosc <http://github.com/Blosc/python-blosc>`_
+* `PyTables <http://github.com/PyTables/PyTables>`_
+* `bcolz <http://github.com/Blosc/bcolz>`_
+
+If your project repository includes this script, please send a pull-request to include
+it in the above list so that we can notify you of any new releases.
+
 Reasoning
 ---------
 
@@ -59,15 +69,6 @@ aware of this need it is (and always should be) possible to build Blosc as a
 shared library and dynamically link any projects that use it. See the
 documentation of the corresponding projects for more information.
 
-Used in ...
-===========
-
-* python-blosc
-* PyTables
-* bcolz
-
-If your repository includes this script, please send a pull-request to include
-it in the above list so that we can notify you of any new releases.
 
 Checking that it worked
 =======================
