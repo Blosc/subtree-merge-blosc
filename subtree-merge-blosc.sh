@@ -37,10 +37,11 @@ if [ "$( git rev-parse --show-toplevel)" != "$( pwd )" ] ; then
     fatal "not currently in the repositories top-level"
 fi
 
+# check if working directory clean
 status="$( git status --porcelain --ignored )"
 if [ "$status" != "" ] ; then
     git status --ignored
-    fatal "Working directory is not clean, see above for details"
+    fatal "working directory is not clean, see above for details"
 fi
 
 # check c-blosc subdirectory exists
