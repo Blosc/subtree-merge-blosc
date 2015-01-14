@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Script to automatically subtree merge a specifc version of blosc.
+# Script to automatically subtree merge a specific version of blosc.
 #
 # For more information, see:
 # http://github.com/Blosc/subtree-merge-blosc
@@ -9,7 +9,7 @@
 #
 # Author: Valentin Haenel <valentin@haenel.co>
 #
-# License: WTFPL (do what the fuck you want public lisence)
+# License: WTFPL (do what the fuck you want public license)
 #
 # TODO
 # ----
