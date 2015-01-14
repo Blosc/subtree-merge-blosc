@@ -1,9 +1,11 @@
 #!/bin/sh
 
-# Script to automatically subtree merge a specifc version of blosc. Please do
-# not modify this script, but submit all changes to:
+# Script to automatically subtree merge a specifc version of blosc.
 #
+# For more information, see:
 # http://github.com/Blosc/subtree-merge-blosc
+#
+# Please do not change this file and submit any changes to the above URL.
 #
 # Author: Valentin Haenel <valentin@haenel.co>
 #
