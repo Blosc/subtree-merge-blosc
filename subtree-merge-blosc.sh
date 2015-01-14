@@ -14,7 +14,6 @@
 # TODO
 # ----
 #
-# * Should probably check working tree and index are clean.
 # * Version number
 
 
@@ -36,6 +35,12 @@ fi
 # check we are in the repository root dir
 if [ "$( git rev-parse --show-toplevel)" != "$( pwd )" ] ; then
     fatal "not currently in the repositories top-level"
+fi
+
+status="$( git status --porcelain --ignored )"
+if [ "$status" != "" ] ; then
+    git status --ignored
+    fatal "Working directory is not clean, see above for details"
 fi
 
 # check c-blosc subdirectory exists
