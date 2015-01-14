@@ -71,7 +71,7 @@ documentation of the corresponding projects for more information.
 
 
 Checking that it worked
-=======================
+-----------------------
 
 You can place a clone of the Blosc repository next to your own project,
 checkout the tag that you are intending to include and then::
