@@ -11,12 +11,8 @@
 # Author: Valentin Haenel <valentin@haenel.co>
 #
 # License: WTFPL (do what the fuck you want public license)
-#
-# TODO
-# ----
-#
-# * Version number
 
+version=0.9
 
 # configure remote
 remote="git://github.com/Blosc/c-blosc.git"
